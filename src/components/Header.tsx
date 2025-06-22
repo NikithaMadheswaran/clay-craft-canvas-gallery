@@ -1,12 +1,8 @@
-
 import { useState } from 'react';
 import { ShoppingCart, Search } from 'lucide-react';
-
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  return (
-    <header className="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50 border-b border-sage-200">
+  return <header className="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50 border-b border-sage-200">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -14,7 +10,7 @@ const Header = () => {
             <div className="w-10 h-10 bg-terracotta-500 rounded-full flex items-center justify-center">
               <span className="text-white font-bold text-lg">C</span>
             </div>
-            <h1 className="text-2xl font-serif font-bold text-clay-800">ClayCraft</h1>
+            <h1 className="text-2xl font-serif font-bold text-clay-800">CLAYFUL  HEARTS</h1>
           </div>
 
           {/* Navigation */}
@@ -37,10 +33,7 @@ const Header = () => {
             </button>
             
             {/* Mobile menu button */}
-            <button 
-              className="md:hidden p-2"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
+            <button className="md:hidden p-2" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               <div className="w-6 h-6 flex flex-col justify-center items-center">
                 <span className={`bg-clay-700 block transition-all duration-300 ease-out h-0.5 w-6 ${isMenuOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
                 <span className={`bg-clay-700 block transition-all duration-300 ease-out h-0.5 w-6 my-0.5 ${isMenuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
@@ -51,8 +44,7 @@ const Header = () => {
         </div>
 
         {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4 border-t border-sage-200 pt-4">
+        {isMenuOpen && <nav className="md:hidden mt-4 pb-4 border-t border-sage-200 pt-4">
             <div className="flex flex-col space-y-4">
               <a href="#home" className="text-clay-700 hover:text-terracotta-500 transition-colors font-medium">Home</a>
               <a href="#collections" className="text-clay-700 hover:text-terracotta-500 transition-colors font-medium">Collections</a>
@@ -60,11 +52,8 @@ const Header = () => {
               <a href="#about" className="text-clay-700 hover:text-terracotta-500 transition-colors font-medium">About</a>
               <a href="#contact" className="text-clay-700 hover:text-terracotta-500 transition-colors font-medium">Contact</a>
             </div>
-          </nav>
-        )}
+          </nav>}
       </div>
-    </header>
-  );
+    </header>;
 };
-
 export default Header;
