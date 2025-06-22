@@ -1,3 +1,4 @@
+
 const Artisans = () => {
   const artisans = [
     {
@@ -5,7 +6,7 @@ const Artisans = () => {
       location: "Rajasthan",
       specialty: "Traditional Pottery",
       experience: "15 years",
-      image: "https://images.unsplash.com/photo-1482881497185-d4a9ddbe4151?w=300&h=300&fit=crop&faces=1",
+      image: "/lovable-uploads/6c0ecae0-eea3-41fc-bd35-bed84ca82c57.png",
       story: "Priya learned the art of pottery from her grandmother and has been creating beautiful terracotta pieces that reflect the rich heritage of Rajasthan.",
       featured: true
     },
@@ -14,7 +15,7 @@ const Artisans = () => {
       location: "Gujarat",
       specialty: "Clay Sculptures",
       experience: "20 years",
-      image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=300&h=300&fit=crop&faces=1",
+      image: "/lovable-uploads/3df689e7-6db4-4576-b706-e1f5cdf3742d.png",
       story: "Master sculptor Ramesh creates intricate clay figurines and decorative pieces, bringing stories to life through his skilled hands."
     },
     {
@@ -22,7 +23,7 @@ const Artisans = () => {
       location: "West Bengal",
       specialty: "Terracotta Art",
       experience: "12 years",
-      image: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=300&h=300&fit=crop&faces=1",
+      image: "/lovable-uploads/84b180b3-b1c3-4c45-9136-fe7df62a8cca.png",
       story: "Anita specializes in Bengal's traditional terracotta art, creating beautiful decorative items that showcase the region's artistic legacy."
     }
   ];

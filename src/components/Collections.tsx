@@ -21,7 +21,7 @@ const Collections = () => {
       title: "Decorative Clay Bowls",
       price: "399",
       originalPrice: "549",
-      image: "/lovable-uploads/5e252dcd-a368-4e3c-a532-7c4e4460c9d0.png",
+      image: "/lovable-uploads/b664ad01-692c-4c6b-900a-ffeb6549dc38.png",
       artisan: "Anita Devi"
     },
     {
