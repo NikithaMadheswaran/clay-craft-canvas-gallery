@@ -6,50 +6,50 @@ const Collections = () => {
       title: "Handwoven Clay Vase",
       price: "899",
       originalPrice: "1,199",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+      image: "/lovable-uploads/342f8213-862c-412a-8e68-db9ddc82a926.png",
       artisan: "Priya Sharma",
       isNew: true
     },
     {
       title: "Traditional Terra Pot Set",
       price: "649",
-      image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=400&h=300&fit=crop",
+      image: "/lovable-uploads/b5144753-24b1-4f71-8022-e3a1da33f664.png",
       artisan: "Ramesh Kumar"
     },
     {
       title: "Decorative Clay Bowls",
       price: "399",
       originalPrice: "549",
-      image: "https://images.unsplash.com/photo-1615671524827-c1fe3973b648?w=400&h=300&fit=crop",
+      image: "/lovable-uploads/5e252dcd-a368-4e3c-a532-7c4e4460c9d0.png",
       artisan: "Anita Devi"
     },
     {
       title: "Artisan Clay Sculpture",
       price: "1,299",
-      image: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&h=300&fit=crop",
+      image: "/lovable-uploads/5b05f15f-6546-4b79-b1ea-06486222d10e.png",
       artisan: "Vikram Singh",
       isNew: true
     },
     {
       title: "Rustic Clay Planters",
       price: "549",
-      image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&h=300&fit=crop",
+      image: "/lovable-uploads/db7ef9e7-48f5-4a1b-a842-9a149d42c11e.png",
       artisan: "Maya Patel"
     },
     {
       title: "Heritage Clay Dinnerware",
       price: "799",
       originalPrice: "999",
-      image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=400&h=300&fit=crop",
+      image: "/lovable-uploads/344ce8d8-231d-452f-845c-fb1666381126.png",
       artisan: "Suresh Yadav"
     }
   ];
 
   const categories = [
-    { name: "Pottery", count: 45, image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=200&fit=crop", color: "terracotta" },
-    { name: "Decorative", count: 32, image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=300&h=200&fit=crop", color: "sage" },
-    { name: "Toys & Games", count: 28, image: "https://images.unsplash.com/photo-1615671524827-c1fe3973b648?w=300&h=200&fit=crop", color: "dusty" },
-    { name: "Dinnerware", count: 38, image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=300&h=200&fit=crop", color: "clay" }
+    { name: "Pottery", count: 45, image: "/lovable-uploads/9a7d82db-780b-4c52-b9aa-335ba97e34a4.png", color: "terracotta" },
+    { name: "Decorative", count: 32, image: "/lovable-uploads/b3625f6c-5456-4b10-9326-df4bccc33fdc.png", color: "sage" },
+    { name: "Toys & Games", count: 28, image: "/lovable-uploads/c89cb7a3-6c49-4368-958a-59398e33d8ec.png", color: "dusty" },
+    { name: "Dinnerware", count: 38, image: "/lovable-uploads/ee6cb905-8a4d-4e3e-8388-46d854bc8db2.png", color: "clay" }
   ];
 
   return (
