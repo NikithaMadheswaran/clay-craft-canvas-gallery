@@ -1,56 +1,55 @@
-
 import ProductCard from './ProductCard';
 
 const Collections = () => {
   const featuredProducts = [
     {
       title: "Handwoven Clay Vase",
-      price: "2,499",
-      originalPrice: "3,299",
-      image: "https://images.unsplash.com/photo-1482881497185-d4a9ddbe4151?w=400&h=300&fit=crop",
+      price: "899",
+      originalPrice: "1,199",
+      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
       artisan: "Priya Sharma",
       isNew: true
     },
     {
       title: "Traditional Terra Pot Set",
-      price: "1,899",
-      image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=400&h=300&fit=crop",
+      price: "649",
+      image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=400&h=300&fit=crop",
       artisan: "Ramesh Kumar"
     },
     {
       title: "Decorative Clay Bowls",
-      price: "899",
-      originalPrice: "1,199",
-      image: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=400&h=300&fit=crop",
+      price: "399",
+      originalPrice: "549",
+      image: "https://images.unsplash.com/photo-1615671524827-c1fe3973b648?w=400&h=300&fit=crop",
       artisan: "Anita Devi"
     },
     {
       title: "Artisan Clay Sculpture",
-      price: "4,999",
-      image: "https://images.unsplash.com/photo-1504893524553-b855bce32c67?w=400&h=300&fit=crop",
+      price: "1,299",
+      image: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&h=300&fit=crop",
       artisan: "Vikram Singh",
       isNew: true
     },
     {
       title: "Rustic Clay Planters",
-      price: "1,299",
-      image: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?w=400&h=300&fit=crop",
+      price: "549",
+      image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&h=300&fit=crop",
       artisan: "Maya Patel"
     },
     {
       title: "Heritage Clay Dinnerware",
-      price: "3,499",
-      originalPrice: "4,199",
-      image: "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?w=400&h=300&fit=crop",
+      price: "799",
+      originalPrice: "999",
+      image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=400&h=300&fit=crop",
       artisan: "Suresh Yadav"
     }
   ];
 
   const categories = [
-    { name: "Pottery", count: 45, image: "https://images.unsplash.com/photo-1482881497185-d4a9ddbe4151?w=300&h=200&fit=crop", color: "terracotta" },
-    { name: "Decorative", count: 32, image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=300&h=200&fit=crop", color: "sage" },
-    { name: "Toys & Games", count: 28, image: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=300&h=200&fit=crop", color: "dusty" },
-    { name: "Dinnerware", count: 38, image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?w=300&h=200&fit=crop", color: "clay" }
+    { name: "Pottery", count: 45, image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=200&fit=crop", color: "terracotta" },
+    { name: "Decorative", count: 32, image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=300&h=200&fit=crop", color: "sage" },
+    { name: "Toys & Games", count: 28, image: "https://images.unsplash.com/photo-1615671524827-c1fe3973b648?w=300&h=200&fit=crop", color: "dusty" },
+    { name: "Dinnerware", count: 38, image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=300&h=200&fit=crop", color: "clay" }
   ];
 
   return (
