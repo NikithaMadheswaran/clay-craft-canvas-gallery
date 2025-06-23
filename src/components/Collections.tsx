@@ -47,7 +47,7 @@ const Collections = () => {
 
   const categories = [
     { name: "Pottery", count: 45, image: "/lovable-uploads/9a7d82db-780b-4c52-b9aa-335ba97e34a4.png", color: "terracotta" },
-    { name: "Decorative", count: 32, image: "/lovable-uploads/b3625f6c-5456-4b10-9326-df4bccc33fdc.png", color: "sage" },
+    { name: "Decorative", count: 32, image: "/lovable-uploads/47982e7e-c789-4710-97fb-08ee992718a5.png", color: "sage" },
     { name: "Toys & Games", count: 28, image: "/lovable-uploads/c89cb7a3-6c49-4368-958a-59398e33d8ec.png", color: "dusty" },
     { name: "Dinnerware", count: 38, image: "/lovable-uploads/fcd30dbb-cdd2-4ef7-ad79-97297ae207ca.png", color: "clay" }
   ];
