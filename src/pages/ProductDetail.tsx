@@ -1,6 +1,5 @@
-
 import { useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { Star, Heart, ShoppingCart, MessageCircle, Truck, Shield, CreditCard } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -15,6 +14,7 @@ const ProductDetail = () => {
   const [selectedImage, setSelectedImage] = useState(0);
   const [quantity, setQuantity] = useState(1);
   const [showChatbot, setShowChatbot] = useState(false);
+  const navigate = useNavigate();
 
   // Sample product data - in real app this would come from API/database
   const product = {
@@ -50,6 +50,19 @@ const ProductDetail = () => {
   const handleAddToCart = () => {
     console.log('Added to cart:', product.title, 'Quantity:', quantity);
     // Add to cart logic here
+  };
+
+  const handleBuyNow = () => {
+    navigate('/checkout', { 
+      state: { 
+        product: {
+          title: product.title,
+          price: product.price,
+          image: product.images[0],
+          artisan: product.artisan
+        }
+      } 
+    });
   };
 
   return (
@@ -146,30 +159,44 @@ const ProductDetail = () => {
               </div>
             </div>
 
-            {/* Quantity and Add to Cart */}
-            <div className="flex items-center space-x-4">
-              <div className="flex items-center border border-gray-300 rounded-lg">
-                <button 
-                  onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                  className="px-3 py-2 hover:bg-gray-100"
-                >
-                  -
-                </button>
-                <span className="px-4 py-2 border-x border-gray-300">{quantity}</span>
-                <button 
-                  onClick={() => setQuantity(quantity + 1)}
-                  className="px-3 py-2 hover:bg-gray-100"
-                >
-                  +
-                </button>
+            {/* Quantity and Buy Actions */}
+            <div className="space-y-4">
+              <div className="flex items-center space-x-4">
+                <div className="flex items-center border border-gray-300 rounded-lg">
+                  <button 
+                    onClick={() => setQuantity(Math.max(1, quantity - 1))}
+                    className="px-3 py-2 hover:bg-gray-100"
+                  >
+                    -
+                  </button>
+                  <span className="px-4 py-2 border-x border-gray-300">{quantity}</span>
+                  <button 
+                    onClick={() => setQuantity(quantity + 1)}
+                    className="px-3 py-2 hover:bg-gray-100"
+                  >
+                    +
+                  </button>
+                </div>
+                <Button onClick={handleAddToCart} variant="outline" className="flex-1">
+                  <ShoppingCart className="w-4 h-4 mr-2" />
+                  Add to Cart
+                </Button>
+                <Button variant="outline" size="icon">
+                  <Heart className="w-4 h-4" />
+                </Button>
               </div>
-              <Button onClick={handleAddToCart} className="flex-1 bg-terracotta-600 hover:bg-terracotta-700">
-                <ShoppingCart className="w-4 h-4 mr-2" />
-                Add to Cart
+
+              {/* Buy Now Button */}
+              <Button 
+                onClick={handleBuyNow}
+                className="w-full bg-terracotta-600 hover:bg-terracotta-700 text-lg py-6"
+              >
+                🛒 Buy Now – Fast & Simple Checkout!
               </Button>
-              <Button variant="outline" size="icon">
-                <Heart className="w-4 h-4" />
-              </Button>
+              
+              <div className="text-center text-sm text-gray-600">
+                <p>✅ No log-in required • 🚚 Fast & free delivery • 💬 MittiBot support</p>
+              </div>
             </div>
 
             {/* Delivery & Payment Info */}
