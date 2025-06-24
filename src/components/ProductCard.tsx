@@ -1,4 +1,6 @@
 
+import { Link } from 'react-router-dom';
+
 interface ProductCardProps {
   title: string;
   price: string;
@@ -28,31 +30,26 @@ const ProductCard = ({
         </div>
       )}
       
-      <div className="relative overflow-hidden">
-        <img
-          src={image}
-          alt={title}
-          className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-        
-        <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0">
-          <button 
-            onClick={onAddToCart}
-            className="bg-white/90 text-clay-800 px-4 py-2 rounded-full text-sm font-medium hover:bg-white transition-colors"
-          >
-            Quick Add
-          </button>
+      <Link to="/product/1" className="block">
+        <div className="relative overflow-hidden">
+          <img
+            src={image}
+            alt={title}
+            className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </div>
-      </div>
+      </Link>
       
       <div className="p-6">
         <div className="mb-2">
           <span className="text-sage-600 text-sm font-medium">by {artisan}</span>
         </div>
-        <h3 className="text-xl font-serif font-semibold text-clay-800 mb-3 group-hover:text-terracotta-600 transition-colors">
-          {title}
-        </h3>
+        <Link to="/product/1">
+          <h3 className="text-xl font-serif font-semibold text-clay-800 mb-3 group-hover:text-terracotta-600 transition-colors">
+            {title}
+          </h3>
+        </Link>
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <span className="text-2xl font-bold text-terracotta-600">₹{price}</span>
@@ -73,6 +70,15 @@ const ProductCard = ({
             ))}
             <span className="text-sm text-gray-600 ml-1">(24)</span>
           </div>
+        </div>
+        
+        <div className="mt-4">
+          <button 
+            onClick={onAddToCart}
+            className="w-full bg-terracotta-600 hover:bg-terracotta-700 text-white py-2 px-4 rounded-lg transition-colors"
+          >
+            Quick Add to Cart
+          </button>
         </div>
       </div>
     </div>
