@@ -1,5 +1,4 @@
-
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 interface ProductCardProps {
   title: string;
@@ -20,6 +19,21 @@ const ProductCard = ({
   isNew = false,
   onAddToCart 
 }: ProductCardProps) => {
+  const navigate = useNavigate();
+
+  const handleBuyNow = () => {
+    navigate('/checkout', { 
+      state: { 
+        product: {
+          title,
+          price,
+          image,
+          artisan
+        }
+      } 
+    });
+  };
+
   return (
     <div className="group relative bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
       {isNew && (
@@ -72,12 +86,18 @@ const ProductCard = ({
           </div>
         </div>
         
-        <div className="mt-4">
+        <div className="mt-4 space-y-2">
           <button 
             onClick={onAddToCart}
-            className="w-full bg-terracotta-600 hover:bg-terracotta-700 text-white py-2 px-4 rounded-lg transition-colors"
+            className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 py-2 px-4 rounded-lg transition-colors text-sm"
           >
             Quick Add to Cart
+          </button>
+          <button 
+            onClick={handleBuyNow}
+            className="w-full bg-terracotta-600 hover:bg-terracotta-700 text-white py-2 px-4 rounded-lg transition-colors text-sm font-medium"
+          >
+            🛒 Buy Now
           </button>
         </div>
       </div>
