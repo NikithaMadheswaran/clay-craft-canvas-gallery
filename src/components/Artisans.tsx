@@ -84,9 +84,14 @@ const Artisans = () => {
                   <button className="bg-terracotta-500 hover:bg-terracotta-600 text-white px-6 py-3 rounded-full font-medium transition-colors">
                     View Collection
                   </button>
-                  <button className="border-2 border-sage-300 hover:border-sage-400 text-sage-700 px-6 py-3 rounded-full font-medium transition-colors">
+                  <a
+                    href="https://www.youtube.com/watch?v=y7gBRjx38DI"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="border-2 border-sage-300 hover:border-sage-400 text-sage-700 px-6 py-3 rounded-full font-medium transition-colors inline-block"
+                  >
                     Watch Story
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -134,9 +139,14 @@ const Artisans = () => {
             Watch exclusive videos of our artisans at work, sharing their techniques, stories, 
             and the passion that drives their craft.
           </p>
-          <button className="bg-white text-terracotta-600 hover:bg-gray-100 px-8 py-4 rounded-full font-medium transition-colors">
-            Watch Videos
-          </button>
+          <a
+            href="https://www.youtube.com/watch?v=y7gBRjx38DI"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white text-terracotta-600 hover:bg-gray-100 px-8 py-4 rounded-full font-medium transition-colors inline-block"
+          >
+            🎥 Watch Videos
+          </a>
         </div>
       </div>
     </section>
