@@ -35,11 +35,11 @@ const Header = () => {
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-clay-700 hover:text-terracotta-500 transition-colors font-medium">Home</Link>
+            <a href="#home" className="text-clay-700 hover:text-terracotta-500 transition-colors font-medium">Home</a>
             <a href="#collections" className="text-clay-700 hover:text-terracotta-500 transition-colors font-medium">Collections</a>
             <a href="#artisans" className="text-clay-700 hover:text-terracotta-500 transition-colors font-medium">Artisans</a>
-            <Link to="/about" className="text-clay-700 hover:text-terracotta-500 transition-colors font-medium">About</Link>
-            <Link to="/contact" className="text-clay-700 hover:text-terracotta-500 transition-colors font-medium">Contact</Link>
+            <a href="#about" className="text-clay-700 hover:text-terracotta-500 transition-colors font-medium">About</a>
+            <a href="#contact" className="text-clay-700 hover:text-terracotta-500 transition-colors font-medium">Contact</a>
           </nav>
 
           {/* Search, Cart, and User */}
@@ -94,11 +94,11 @@ const Header = () => {
         {isMenuOpen && (
           <nav className="md:hidden mt-4 pb-4 border-t border-sage-200 pt-4">
             <div className="flex flex-col space-y-4">
-              <Link to="/" className="text-clay-700 hover:text-terracotta-500 transition-colors font-medium">Home</Link>
+              <a href="#home" className="text-clay-700 hover:text-terracotta-500 transition-colors font-medium">Home</a>
               <a href="#collections" className="text-clay-700 hover:text-terracotta-500 transition-colors font-medium">Collections</a>
               <a href="#artisans" className="text-clay-700 hover:text-terracotta-500 transition-colors font-medium">Artisans</a>
-              <Link to="/about" className="text-clay-700 hover:text-terracotta-500 transition-colors font-medium">About</Link>
-              <Link to="/contact" className="text-clay-700 hover:text-terracotta-500 transition-colors font-medium">Contact</Link>
+              <a href="#about" className="text-clay-700 hover:text-terracotta-500 transition-colors font-medium">About</a>
+              <a href="#contact" className="text-clay-700 hover:text-terracotta-500 transition-colors font-medium">Contact</a>
             </div>
           </nav>
         )}

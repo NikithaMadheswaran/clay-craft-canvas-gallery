@@ -1,3 +1,4 @@
+
 const Artisans = () => {
   const artisans = [
     {
@@ -5,7 +6,7 @@ const Artisans = () => {
       location: "Rajasthan",
       specialty: "Traditional Pottery",
       experience: "15 years",
-      image: "/image-uploads/6c0ecae0-eea3-41fc-bd35-bed84ca82c57.png",
+      image: "/lovable-uploads/6c0ecae0-eea3-41fc-bd35-bed84ca82c57.png",
       story: "Priya learned the art of pottery from her grandmother and has been creating beautiful terracotta pieces that reflect the rich heritage of Rajasthan.",
       featured: true
     },
@@ -14,7 +15,7 @@ const Artisans = () => {
       location: "Gujarat",
       specialty: "Clay Sculptures",
       experience: "20 years",
-      image: "/image-uploads/3df689e7-6db4-4576-b706-e1f5cdf3742d.png",
+      image: "/lovable-uploads/3df689e7-6db4-4576-b706-e1f5cdf3742d.png",
       story: "Master sculptor Ramesh creates intricate clay figurines and decorative pieces, bringing stories to life through his skilled hands."
     },
     {
@@ -22,7 +23,7 @@ const Artisans = () => {
       location: "West Bengal",
       specialty: "Terracotta Art",
       experience: "12 years",
-      image: "/image-uploads/84b180b3-b1c3-4c45-9136-fe7df62a8cca.png",
+      image: "/lovable-uploads/84b180b3-b1c3-4c45-9136-fe7df62a8cca.png",
       story: "Anita specializes in Bengal's traditional terracotta art, creating beautiful decorative items that showcase the region's artistic legacy."
     }
   ];
@@ -83,14 +84,9 @@ const Artisans = () => {
                   <button className="bg-terracotta-500 hover:bg-terracotta-600 text-white px-6 py-3 rounded-full font-medium transition-colors">
                     View Collection
                   </button>
-                  <a
-                    href="https://www.youtube.com/watch?v=y7gBRjx38DI"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="border-2 border-sage-300 hover:border-sage-400 text-sage-700 px-6 py-3 rounded-full font-medium transition-colors inline-block"
-                  >
+                  <button className="border-2 border-sage-300 hover:border-sage-400 text-sage-700 px-6 py-3 rounded-full font-medium transition-colors">
                     Watch Story
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -138,14 +134,9 @@ const Artisans = () => {
             Watch exclusive videos of our artisans at work, sharing their techniques, stories, 
             and the passion that drives their craft.
           </p>
-          <a
-            href="https://www.youtube.com/watch?v=y7gBRjx38DI"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-white text-terracotta-600 hover:bg-gray-100 px-8 py-4 rounded-full font-medium transition-colors inline-block"
-          >
-            🎥 Watch Videos
-          </a>
+          <button className="bg-white text-terracotta-600 hover:bg-gray-100 px-8 py-4 rounded-full font-medium transition-colors">
+            Watch Videos
+          </button>
         </div>
       </div>
     </section>

@@ -26,9 +26,9 @@ const ProductDetail = () => {
     rating: 4.5,
     reviewCount: 24,
     images: [
-      "/image-uploads/342f8213-862c-412a-8e68-db9ddc82a926.png",
-      "/image-uploads/b5144753-24b1-4f71-8022-e3a1da33f664.png",
-      "/image-uploads/b664ad01-692c-4c6b-900a-ffeb6549dc38.png"
+      "/lovable-uploads/342f8213-862c-412a-8e68-db9ddc82a926.png",
+      "/lovable-uploads/b5144753-24b1-4f71-8022-e3a1da33f664.png",
+      "/lovable-uploads/b664ad01-692c-4c6b-900a-ffeb6549dc38.png"
     ],
     details: {
       material: "Pure Clay",
