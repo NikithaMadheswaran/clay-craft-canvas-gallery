@@ -6,50 +6,50 @@ const Collections = () => {
       title: "Handwoven Clay Vase",
       price: "899",
       originalPrice: "1,199",
-      image: "/lovable-uploads/342f8213-862c-412a-8e68-db9ddc82a926.png",
+      image: "/image-uploads/342f8213-862c-412a-8e68-db9ddc82a926.png",
       artisan: "Priya Sharma",
       isNew: true
     },
     {
       title: "Traditional Terra Pot Set",
       price: "649",
-      image: "/lovable-uploads/b5144753-24b1-4f71-8022-e3a1da33f664.png",
+      image: "/image-uploads/b5144753-24b1-4f71-8022-e3a1da33f664.png",
       artisan: "Ramesh Kumar"
     },
     {
       title: "Decorative Clay Bowls",
       price: "399",
       originalPrice: "549",
-      image: "/lovable-uploads/b664ad01-692c-4c6b-900a-ffeb6549dc38.png",
+      image: "/image-uploads/b664ad01-692c-4c6b-900a-ffeb6549dc38.png",
       artisan: "Anita Devi"
     },
     {
       title: "Artisan Clay Sculpture",
       price: "1,299",
-      image: "/lovable-uploads/5b05f15f-6546-4b79-b1ea-06486222d10e.png",
+      image: "/image-uploads/5b05f15f-6546-4b79-b1ea-06486222d10e.png",
       artisan: "Vikram Singh",
       isNew: true
     },
     {
       title: "Rustic Clay Planters",
       price: "549",
-      image: "/lovable-uploads/db7ef9e7-48f5-4a1b-a842-9a149d42c11e.png",
+      image: "/image-uploads/db7ef9e7-48f5-4a1b-a842-9a149d42c11e.png",
       artisan: "Maya Patel"
     },
     {
       title: "Heritage Clay Dinnerware",
       price: "799",
       originalPrice: "999",
-      image: "/lovable-uploads/344ce8d8-231d-452f-845c-fb1666381126.png",
+      image: "/image-uploads/344ce8d8-231d-452f-845c-fb1666381126.png",
       artisan: "Suresh Yadav"
     }
   ];
 
   const categories = [
-    { name: "Pottery", count: 45, image: "/lovable-uploads/9a7d82db-780b-4c52-b9aa-335ba97e34a4.png", color: "terracotta" },
-    { name: "Decorative", count: 32, image: "/lovable-uploads/47982e7e-c789-4710-97fb-08ee992718a5.png", color: "sage" },
-    { name: "Toys & Games", count: 28, image: "/lovable-uploads/c89cb7a3-6c49-4368-958a-59398e33d8ec.png", color: "dusty" },
-    { name: "Dinnerware", count: 38, image: "/lovable-uploads/fcd30dbb-cdd2-4ef7-ad79-97297ae207ca.png", color: "clay" }
+    { name: "Pottery", count: 45, image: "/image-uploads/9a7d82db-780b-4c52-b9aa-335ba97e34a4.png", color: "terracotta" },
+    { name: "Decorative", count: 32, image: "/image-uploads/47982e7e-c789-4710-97fb-08ee992718a5.png", color: "sage" },
+    { name: "Toys & Games", count: 28, image: "/image-uploads/c89cb7a3-6c49-4368-958a-59398e33d8ec.png", color: "dusty" },
+    { name: "Dinnerware", count: 38, image: "/image-uploads/fcd30dbb-cdd2-4ef7-ad79-97297ae207ca.png", color: "clay" }
   ];
 
   return (
